@@ -4,3 +4,9 @@ declare module 'AnimeListRemote/AnimeList' {
 
   export default AnimeListRemote;
 }
+
+declare module 'TopAnimeListRemote/TopAnimeList' {
+  const TopAnimeListRemote: React.ComponentType;
+
+  export default TopAnimeListRemote;
+}

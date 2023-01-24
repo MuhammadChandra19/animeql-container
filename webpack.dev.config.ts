@@ -54,6 +54,7 @@ const config: Configuration = {
       filename: "remoteEntry.js",
       remotes: {
         'AnimeListRemote': "AnimeListRemote@http://localhost:4001/remoteEntry.js",
+        'TopAnimeListRemote': "TopAnimeListRemote@http://localhost:4002/remoteEntry.js"
       },
       shared: {
         react: { 
@@ -66,8 +67,18 @@ const config: Configuration = {
           singleton: true,
           eager: true
         },
+        '@emotion/styled': {
+          requiredVersion: deps['@emotion/styled'],
+          singleton: true,
+          eager: true
+        },
         '@emotion/react': {
           requiredVersion: deps['@emotion/react'],
+          singleton: true,
+          eager: true
+        },
+        '@emotion/cache': {
+          requiredVersion: deps['@emotion/cache'],
           singleton: true,
           eager: true
         },

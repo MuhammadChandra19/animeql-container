@@ -4,6 +4,7 @@ import { Container, Layout } from './Views/Styles/LayoutStyle'
 import { GlobalStyles } from 'twin.macro'
 import { css } from '@emotion/react'
 import AnimeList from 'AnimeListRemote/AnimeList'
+import TopAnimeList from 'TopAnimeListRemote/TopAnimeList'
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
 
 const root = ReactDOM.createRoot(
@@ -26,6 +27,7 @@ root.render(
     <Layout>
       <Container tw='rounded'>
         <AnimeList />
+        <TopAnimeList />
       </Container>
     </Layout>
   </ApolloProvider>
