@@ -49,6 +49,8 @@ const config: Configuration = {
       filename: "remoteEntry.js",
       remotes: {
         'AnimeListRemote': "AnimeListRemote@https://MuhammadChandra19.github.io/animeql-list/remoteEntry.js",
+        'TopAnimeListRemote': "TopAnimeListRemote@https://MuhammadChandra19.github.io/animeql-top/remoteEntry.js"
+
       },
       shared: {
         react: { 
