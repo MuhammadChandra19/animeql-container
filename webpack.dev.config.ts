@@ -3,6 +3,7 @@ import { Configuration as WebpackConfiguration, HotModuleReplacementPlugin, cont
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server'
 import HtmlWebpackPlugin from "html-webpack-plugin"
 import ESLintPlugin from "eslint-webpack-plugin"
+import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 const deps = require('./package.json').dependencies
 
 const ModuleFederationPlugin = container.ModuleFederationPlugin
@@ -80,7 +81,8 @@ const config: Configuration = {
         //   eager: true
         // },
       },
-    })
+    }),
+    new CleanWebpackPlugin()
   ],
   devtool: "inline-source-map",
   devServer: {

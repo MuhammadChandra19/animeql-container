@@ -64,7 +64,8 @@ const config: Configuration = {
           eager: true
         },
       },
-    })
+    }),
+    new CleanWebpackPlugin()
     // new BundleAnalyzerPlugin()
   ],
 };
