@@ -63,6 +63,21 @@ const config: Configuration = {
           singleton: true,
           eager: true
         },
+        '@emotion/styled': {
+          requiredVersion: deps['@emotion/styled'],
+          singleton: true,
+          eager: true
+        },
+        '@emotion/react': {
+          requiredVersion: deps['@emotion/react'],
+          singleton: true,
+          eager: true
+        },
+        '@emotion/cache': {
+          requiredVersion: deps['@emotion/cache'],
+          singleton: true,
+          eager: true
+        },
       },
     }),
     new CleanWebpackPlugin()
