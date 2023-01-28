@@ -65,21 +65,26 @@ const config: Configuration = {
           singleton: true,
           eager: true
         },
-        // '@emotion/styled': {
-        //   requiredVersion: deps['@emotion/styled'],
-        //   singleton: true,
-        //   eager: true
-        // },
-        // // '@emotion/react': {
-        // //   requiredVersion: deps['@emotion/react'],
-        // //   singleton: true,
-        // //   eager: true
-        // // },
-        // '@emotion/cache': {
-        //   requiredVersion: deps['@emotion/cache'],
-        //   singleton: true,
-        //   eager: true
-        // },
+        '@emotion/styled': {
+          requiredVersion: deps['@emotion/styled'],
+          singleton: true,
+          eager: true
+        },
+        '@emotion/react': {
+          requiredVersion: deps['@emotion/react'],
+          singleton: true,
+          eager: true
+        },
+        '@emotion/core': {
+          requiredVersion: deps['@emotion/core'],
+          singleton: true,
+          eager: true
+        },
+        '@apollo/client': {
+          requiredVersion: deps['@apollo/client'],
+          singleton: true,
+          eager: true
+        }
       },
     }),
     new CleanWebpackPlugin()
