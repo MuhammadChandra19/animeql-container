@@ -74,11 +74,16 @@ const config: Configuration = {
           singleton: true,
           eager: true
         },
-        '@emotion/cache': {
-          requiredVersion: deps['@emotion/cache'],
+        '@emotion/core': {
+          requiredVersion: deps['@emotion/core'],
           singleton: true,
           eager: true
         },
+        '@apollo/client': {
+          requiredVersion: deps['@apollo/client'],
+          singleton: true,
+          eager: true
+        }
       },
     }),
     new CleanWebpackPlugin(),
